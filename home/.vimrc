@@ -1,3 +1,4 @@
+call pathogen#infect()
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -13,6 +14,7 @@ Bundle 'gmarik/vundle'
 " scripts on GitHub repos
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'bling/vim-airline'
 
 " The sparkup vim script is in a subdirectory of this repo called vim.
 " Pass the path to set the runtimepath properly.
@@ -26,4 +28,5 @@ Bundle 'git://git.wincent.com/command-t.git'
 filetype plugin indent on
 syntax on
 set background=dark
-colorscheme solarized
+let g:airline_powerline_fonts = 1
+let g:airline_theme='light'
